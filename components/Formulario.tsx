@@ -41,6 +41,10 @@ export default function Formulario(){
             <View style={{marginRight:"40%"}}>
                 <Button title="Calcular"/>
             </View>
+            <View style={estilos.resultadoContainer}>
+                    <Text style={estilos.label}>Resultado: </Text>
+                    <Text style={estilos.resultado}>?</Text>
+            </View>
         </View>
     );
 }
@@ -72,7 +76,8 @@ const estilos = StyleSheet.create({
         padding:30,
         borderRadius:15,
         backgroundColor:"white",
-        gap:45
+        gap:45,
+        boxShadow: "1px 1px 8px 2px #bebebeff"
     },
     label:{
         fontFamily: "ChakraPetch",
@@ -104,5 +109,19 @@ const estilos = StyleSheet.create({
         gap:10,
         alignItems:"center",
         justifyContent:"center"
+    },
+    resultadoContainer:{
+        flexDirection:"row",
+        padding:30,
+        borderRadius:15,
+        borderStyle:"solid",
+        borderWidth:3,
+        borderColor:"#62b4e4ff",
+        gap:10,
+        marginRight: "25%"
+    },
+    resultado:{
+        fontSize: 25,
+        fontFamily:"ChakraPetch",
     }
 })
