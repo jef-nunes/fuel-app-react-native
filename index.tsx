@@ -19,15 +19,16 @@ export default function Index() {
 
 const estilos = StyleSheet.create({
   pagina:{
-    flex:1
+    flex:1,
+    backgroundColor: "#e0e0deff"
   },
   viewPrincipal:{
     position:"absolute",
     left:"25%",
     top:"15%",
-    backgroundColor: "#dee4e7ff",
+    backgroundColor: "#e0e0deff",
     alignItems:"center",
     justifyContent:"center",
-    boxShadow: "1px 1px 10px 1px #ccccccff"
+    gap:40
   }
 });
